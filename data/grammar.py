@@ -56,63 +56,71 @@ grammar_1B = {
 grammar_2A = {
     "2A_1": "N+(이)라고 하다::학생이라고 해요. (haksaeng-irago haeyo) – U o‘zini o‘quvchi deb aytadi.",
     "2A_2": "V+(으)려고::공부하려고 해요. (gongbu-haryeogo haeyo) – Dars qilmoqchiman.",
-    "2A_3": "A/V + 거나::책을 읽거나 음악을 들어요. (chaeg-eul ilggeona eumag-eul deureoyo) – Kitob o‘qiyman yoki musiqa tinglayman.",
-    "2A_4": "N+(이)나::물이나 주스를 마셨어요. (mulina juseu-reul masyeosseoyo) – Suv yoki sharbat ichdim.",
-    "2A_5": "V+는 것::운동하는 것을 좋아해요. (undong-haneun geoseul joahaeyo) – Sport bilan shug‘ullanishni yaxshi ko‘raman.",
-    "2A_6": "V+을/ㄹ 줄 알다::수영할 줄 알아요. (suyong-hal jul arayo) – Suza olaman.",
-    "2A_7": "A/V+지 않다::먹지 않아요. (meokji anayo) – Yeymayapman.",
-    "2A_8": "N+동안::1년 동안 한국에 있었어요. (ilnyeon dongan hanguge isseosseoyo) – 1 yil davomida Koreyada edim.",
-    "2A_9": "A+은/ㄴ 데::비싼 데 좋아요. (bissan de joayo) – Qimmat, lekin yaxshi.",
-    "2A_10": "V+을/ㄹ::읽을 책이에요. (ilgeul chaeg-ieyo) – O‘qiladigan kitob.",
-    "2A_11": "A+(으)ㄴ 것 같다::예쁜 것 같아요. (yeppeun geot gatayo) – Chiroyli ko‘rinadi.",
-    "2A_12": "N+보다::사과보다 배가 더 맛있어요. (sagwaboda baega deo masisseoyo) – Olmadan ko‘ra nok mazaliroq.",
-    "2A_13": "V+았/었/했으면 좋겠다::한국에 갔으면 좋겠어요. (hanguk-e gasseumyeon jokesseoyo) – Koreyaga borganimni xohlardim.",
-    "2A_14": "A/V+을/ㄹ 까요?::같이 갈까요? (gachi galkkayo?) – Birga boramizmi?",
-    "2A_15": "A/V+을/ㄹ 거예요::내일 만날 거예요. (naeil mannal geoyeyo) – Ertaga uchrashamiz.",
-    "2A_16": "A/V+(으)니까::늦었으니까 빨리 가요. (neujeosseunikka ppalli gayo) – Kechikdik, shuning uchun tezroq ketaylik.",
-    "2A_17": "V+고 나서::밥을 먹고 나서 공부했어요. (bapeul meokgo naseo gongbuhesseoyo) – Ovqat yegach dars qildim.",
-    "2A_18": "N+(으)로::버스로 갔어요. (beoseuro gasseoyo) – Avtobusda bordim.",
-    "2A_19": "N+(이)라서::학생이라서 돈이 없어요. (haksaeng-iraseo don-i eopseoyo) – O‘quvchi bo‘lganim uchun pulim yo‘q.",
-    "2A_20": "V+(으)면 되다::버튼을 누르면 돼요. (beoteuneul nureumyeon dwaeyo) – Tugmani bossangiz bo‘ladi.",
-    "2A_21": "V+(으)ㄴ 것 같다::간 것 같아요. (gan geot gatayo) – Ketgandek tuyuladi.",
-    "2A_22": "A/V+(으)ㄹ 것 같다::비가 올 것 같아요. (biga ol geot gatayo) – Yomg‘ir yog‘adiganga o‘xshaydi.",
-    "2A_23": "V+는지 알다::그 사람이 어디 사는지 알아요? (geu sarami eodi saneunji arayo?) – U odam qayerda yashashini bilasizmi?",
-    "2A_24": "N+인지 알다::그 사람이 의사인지 알아요. (geu sarami uisa-inji arayo) – U odam shifokorligini bilaman.",
-    "2A_25": "V+(으)려면::한국어를 잘하려면 많이 연습해야 해요. (hangugeoreul jalharyeomyeon mani yeonseubhaeya haeyo) – Koreys tilini yaxshi bilmoqchi bo‘lsangiz, ko‘p mashq qilishingiz kerak.",
-    "2A_26": "V+다가::텔레비전을 보다가 잤어요. (tellebijeoneul bodaga jasseoyo) – Televizor ko‘rayotib uxlab qolganman.",
-    "2A_27": "A/V+겠::맛있겠어요. (masitgetseoyo) – Mazali bo‘lsa kerak.",
-    "2A_28": "V+아/어 버리다::잊어 버렸어요. (ijeo beoryeosseoyo) – Unutib yubordim.",
-    "2A_29": "N+때문에::감기 때문에 못 갔어요. (gamgi ttaemune mot gasseoyo) – Shamollaganim uchun bora olmadim.",
-    "2A_30": "A/V+(으)ㄹ 때::어릴 때 한국에 갔어요. (eoril ttae hanguke gasseoyo) – Yoshligimda Koreyaga borganman.",
-    "2A_31": "A/V/N+데요::예쁜데요! (yeppeundeyo) – Chiroyli ekan-ku!",
-    "2A_32": "V+는 중이다::공부하는 중이에요. (gongbuhaneun jung-ieyo) – Dars qilayotgan paytdaman.",
-    "2A_33": "N+중이다::회의 중입니다. (hoeui jung-imnida) – Hozir yig‘ilishdamiz.",
-    "2A_34": "N+밖에::물밖에 없어요. (mulbakke eopseoyo) – Faqat suv bor, boshqa narsa yo‘q."
+    "2A_3": "A/V + 거나::책을 읽거나 음악을 들어요. – Kitob o‘qiyman yoki musiqa tinglayman.",
+    "2A_4": "N+(이)나::물이나 주스를 마셨어요. – Suv yoki sharbat ichdim.",
+    "2A_5": "V+는 것::운동하는 것을 좋아해요. – Sport bilan shug‘ullanishni yaxshi ko‘raman.",
+    "2A_6": "V+을/ㄹ 줄 알다::수영할 줄 알아요. – Suza olaman.",
+    "2A_7": "A/V+지 않다::먹지 않아요. – Yeymayapman.",
+    "2A_8": "N+동안::1년 동안 한국에 있었어요. – 1 yil davomida Koreyada edim.",
+    "2A_9": "A+은/ㄴ 데::비싼 데 좋아요. – Qimmat, lekin yaxshi.",
+    "2A_10": "V+을/ㄹ::읽을 책이에요. – O‘qiladigan kitob.",
+    "2A_11": "A+(으)ㄴ 것 같다::예쁜 것 같아요. – Chiroyli ko‘rinadi.",
+    "2A_12": "N+보다::사과보다 배가 더 맛있어요. – Olmadan ko‘ra nok mazaliroq.",
+    "2A_13": "V+았/었/했으면 좋겠다::한국에 갔으면 좋겠어요. – Koreyaga borganimni xohlardim.",
+    "2A_14": "A/V+을/ㄹ 까요?::같이 갈까요? – Birga boramizmi?",
+    "2A_15": "A/V+을/ㄹ 거예요::내일 만날 거예요. – Ertaga uchrashamiz.",
+    "2A_16": "A/V+(으)니까::늦었으니까 빨리 가요. – Kechikdik, shuning uchun tezroq ketaylik.",
+    "2A_17": "V+고 나서::밥을 먹고 나서 공부했어요. – Ovqat yegach dars qildim.",
+    "2A_18": "N+(으)로::버스로 갔어요. – Avtobusda bordim.",
+    "2A_19": "N+(이)라서::학생이라서 돈이 없어요. – O‘quvchi bo‘lganim uchun pulim yo‘q.",
+    "2A_20": "V+(으)면 되다::버튼을 누르면 돼요. – Tugmani bossangiz bo‘ladi.",
+    "2A_21": "V+(으)ㄴ 것 같다::간 것 같아요. – Ketgandek tuyuladi.",
+    "2A_22": "A/V+(으)ㄹ 것 같다::비가 올 것 같아요. – Yomg‘ir yog‘adiganga o‘xshaydi.",
+    "2A_23": "V+는지 알다::그 사람이 어디 사는지 알아요? – U odam qayerda yashashini bilasizmi?",
+    "2A_24": "N+인지 알다::그 사람이 의사인지 알아요. – U odam shifokorligini bilaman.",
+    "2A_25": "V+(으)려면::한국어를 잘하려면 많이 연습해야 해요. – Koreys tilini yaxshi bilmoqchi bo‘lsangiz, ko‘p mashq qilishingiz kerak.",
+    "2A_26": "V+다가::텔레비전을 보다가 잤어요. – Televizor ko‘rayotib uxlab qolganman.",
+    "2A_27": "A/V+겠::맛있겠어요. – Mazali bo‘lsa kerak.",
+    "2A_28": "V+아/어 버리다::잊어 버렸어요. – Unutib yubordim.",
+    "2A_29": "N+때문에::감기 때문에 못 갔어요. – Shamollaganim uchun bora olmadim.",
+    "2A_30": "A/V+(으)ㄹ 때::어릴 때 한국에 갔어요. – Yoshligimda Koreyaga borganman.",
+    "2A_31": "A/V/N+데요::예쁜데요! – Chiroyli ekan-ku!",
+    "2A_32": "V+는 중이다::공부하는 중이에요. – Dars qilayotgan paytdaman.",
+    "2A_33": "N+중이다::회의 중입니다. – Hozir yig‘ilishdamiz.",
+    "2A_34": "N+밖에::물밖에 없어요. – Faqat suv bor, boshqa narsa yo‘q."
 }
 grammar_2B = {
-"2B kitobi gramatikalari tez orada qo'shiladi!!"
+    "2B_1": "2B kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_3A = {
-"3A kitobi gramatikalari tez orada qo'shiladi!!"
+    "3A_1": "3A kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_3B = {
-"3B kitobi gramatikalari tez orada qo'shiladi!!"  
+    "3B_1": "3B kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_4A = {
-"4A kitobi gramatikalari tez orada qo'shiladi!!"  
+    "4A_1": "4A kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_4B = {
-"4B kitobi gramatikalari tez orada qo'shiladi!!"  
+    "4B_1": "4B kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_5A = {
-"5A kitobi gramatikalari tez orada qo'shiladi!!"  
+    "5A_1": "5A kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_5B = {
-"5B kitobi gramatikalari tez orada qo'shiladi!!" 
+    "5B_1": "5B kitobi gramatikalari tez orada qo'shiladi!!"
 }
-grammar_6A = { 
-"6A kitobi gramatikalari tez orada qo'shiladi!!"
+
+grammar_6A = {
+    "6A_1": "6A kitobi gramatikalari tez orada qo'shiladi!!"
 }
+
 grammar_6B = {
-"6B kitobi gramatikalari tez orada qo'shiladi!!"
+    "6B_1": "6B kitobi gramatikalari tez orada qo'shiladi!!"
 }
