@@ -145,21 +145,24 @@ async def topik2_handler(message: types.Message):
         parse_mode="HTML",
         disable_web_page_preview=True
     )
-# === Premium ===
 @dp.message_handler(lambda message: message.text == "💎 Premium darslar")
 async def premium_info(message: types.Message):
     text = (
-        "💎 PREMIUM DARS TARIFI\n\n"
-        "📌 Imkoniyatlar:\n"
-        "🔹 Har ikki kunda jonli dars\n"
-        "🔹 Yopiq premium materiallar\n"
-        "🔹 0 dan koreys tilini o‘rganish\n"
-        "🔹 Savol-javoblar uchun guruh\n\n"
-        "💰 Narxi: 30 000 so‘m / oy\n"
-        "💳 To‘lov karta:\n5614 6818 1030 9850\n\n"
-        "📅 To‘lov cheki bilan 'PREMIUM' deb yuboring!"
+        "💎 <b>PREMIUM DARS TARIFI</b>\n\n"
+        "📚 <b>PREMIUM obunaga nimalar kiradi?</b>\n"
+        "✅ Har ikki kunda jonli dars (Zoom/Telegram)\n"
+        "✅ Yopiq premium materiallar (video, audio, topshiriqlar)\n"
+        "✅ 0 dan koreys tilini o‘rganish uchun to‘liq yo‘nalish\n"
+        "✅ <b>TOPIK 1 va TOPIK 2</b> darslari to‘liq va tartibli ko‘rinishda\n"
+        "✅ Faol guruh va ustoz bilan doimiy aloqa\n\n"
+        "🎁 <b>BONUS:</b> O‘rganganingizni tekshirish uchun testlar\n\n"
+        "💰 <b>Narxi:</b> <s>100 000 so‘m</s> ➤ <b>50 000 so‘m / oy (chegirmada!)</b>\n"
+        "💳 <b>To‘lov uchun karta:</b>\n5614 6818 1030 9850\n\n"
+        "📩 <b>To‘lovni amalga oshirgach, 'PREMIUM' deb yozib yuboring.</b>\n\n"
+        "🚀 O‘rganishni kechiktirmang — hoziroq boshlang!"
     )
-    await message.answer(text)
+    await message.answer(text, parse_mode="HTML")
+
 
 @dp.message_handler(content_types=types.ContentType.PHOTO)
 async def handle_check(message: types.Message):
