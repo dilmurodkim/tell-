@@ -126,26 +126,25 @@ async def show_books_menu(callback: types.CallbackQuery):
     await show_books(callback.message)
     await callback.answer()
 
-# === TOPIK 1 ===
 @dp.message_handler(lambda message: message.text == "📚 TOPIK 1")
 async def topik1_handler(message: types.Message):
     await message.reply(
-        f"📘 TOPIK 1 sayohatiga xush kelibsiz!\n"
-        f"Bu yerda asoslar mustahkamlanadi, kelajakdagi yutuqlaringiz shu yerda boshlanadi! 💪\n\n"
-        f"🚀 Boshlash: {TOPIK_LINK}",
+        "📘 <b>TOPIK 1 sayohatiga xush kelibsiz!</b>\n"
+        "Bu yerda asoslar mustahkamlanadi, kelajakdagi yutuqlaringiz shu yerda boshlanadi! 💪\n\n"
+        f"🚀 <b>Boshlash</b>: <a href='{TOPIK_LINK}'>TOPIK 1 kanaliga o‘tish</a>",
+        parse_mode="HTML",
         disable_web_page_preview=True
     )
 
-# === TOPIK 2 ===
 @dp.message_handler(lambda message: message.text == "📚 TOPIK 2")
 async def topik2_handler(message: types.Message):
     await message.reply(
-        f"📚 Siz endi TOPIK 2 \"jang maydoni\"dasiz!\n"
-        f"Tayyor bo‘ling — bilimlar hujumi boshlanmoqda 😄\n\n"
-        f"🚀 Qo‘shiling: {TOPIK2_LINK}",
+        "📚 <b>Siz endi TOPIK 2 \"jang maydoni\"dasiz!</b>\n"
+        "Tayyor bo‘ling — bilimlar hujumi boshlanmoqda 😄\n\n"
+        f"🚀 <b>Qo‘shiling</b>: <a href='{TOPIK2_LINK}'>TOPIK 2 kanaliga o‘tish</a>",
+        parse_mode="HTML",
         disable_web_page_preview=True
     )
-
 # === Premium ===
 @dp.message_handler(lambda message: message.text == "💎 Premium darslar")
 async def premium_info(message: types.Message):
