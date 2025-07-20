@@ -38,8 +38,8 @@ main_menu.add(
 
 @dp.message_handler(commands=["start"])
 async def start_handler(message: types.Message):
-    await message.answer(
-        "🇰🇷 Assalomu alaykum!
+    await message.answer("""
+        🇰🇷 Assalomu alaykum!
 
 Siz koreys tilini o‘rganishni istaganlar safidasiz 🎉
 
@@ -50,8 +50,8 @@ Bu bot orqali siz:
 👨‍🏫 Premium darslarga ulanasiz
 
 Keling, koreys tilini 0'dan birga o‘rganamiz!
-👇 Quyidagi bo‘limlardan birini tanlang:
-",
+👇 Quyidagi bo‘limlardan birini tanlang:"""
+,
         reply_markup=main_menu
     )
 
