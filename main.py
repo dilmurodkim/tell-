@@ -39,7 +39,19 @@ main_menu.add(
 @dp.message_handler(commands=["start"])
 async def start_handler(message: types.Message):
     await message.answer(
-        "Assalomu alaykum!\n한국어 o‘rgatadigan botga xush kelibsiz.\nQuyidagi menydan foydalaning:",
+        "🇰🇷 Assalomu alaykum!
+
+Siz koreys tilini o‘rganishni istaganlar safidasiz 🎉
+
+Bu bot orqali siz:
+📘 Harflarni (한글) o‘rganasiz
+🧠 Grammatika (1A–4B) bilan mustahkam asos yaratasiz
+🎧 TOPIK 1 va 2 testlariga tayyorgarlik ko‘rasiz
+👨‍🏫 Premium darslarga ulanasiz
+
+Keling, koreys tilini 0'dan birga o‘rganamiz!
+👇 Quyidagi bo‘limlardan birini tanlang:
+",
         reply_markup=main_menu
     )
 
